@@ -159,7 +159,7 @@ extension TodosViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.interactor?.didCommitDelete(for: indexPath.row)
+            self.interactor?.didDeleteTodo(for: indexPath.row)
         }
     }
     

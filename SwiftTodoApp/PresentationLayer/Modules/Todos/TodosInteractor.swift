@@ -11,7 +11,7 @@ import Foundation
 protocol TodosInteractor {
     func addTapped(with: String)
     func viewDidLoad()
-    func didCommitDelete(for index: Int)
+    func didDeleteTodo(for index: Int)
     func didSelectRow(at index: Int)
 }
 
@@ -29,22 +29,25 @@ class TodosInteractorImplementation: TodosInteractor {
     
     func viewDidLoad() {
         do {
-            //gettodos from service
-            //run presenter function didRetrieveTodos
+            self.todos = try todosService.getTodos()
+            
+            presenter?.interactor(didRetrieveTodos: self.todos)
         } catch {
             presenter?.interactor(didFailRetrieveTodos: error)
         }
     }
     
-    func didCommitDelete(for index: Int) {
-        do {
-            //delete todo from service
-            //delete todo from todos list
-            //run presenter funrction didDeleteTodoAtIndex
-        } catch {
-            presenter?.interactor(didFailDeleteTodoAtIndex: index)
+    func didDeleteTodo(for index: Int) {
+        if let id = self.todos[index].id {
+            do {
+                try todosService.deleteTodo(with: id)
+                self.todos.remove(at: index)
+                presenter?.interactor(didDeleteTodoAtIndex: index)
+            } catch {
+                presenter?.interactor(didFailDeleteTodoAtIndex: index)
+            }
+            
         }
-        
     }
     
     func didSelectRow(at index: Int) {
