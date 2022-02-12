@@ -54,14 +54,102 @@
 		948B7DE727B7D5B700BE1973 /* SwiftTodoApp */ = {
 			isa = PBXGroup;
 			children = (
-				948B7DE827B7D5B700BE1973 /* AppDelegate.swift */,
+				948B7E0327B7D9F000BE1973 /* ApplicationLayer */,
+				948B7E0227B7D9E700BE1973 /* PresentationLayer */,
+				948B7E0127B7D9DE00BE1973 /* BusinessLogicLayer */,
+				948B7E0027B7D9D500BE1973 /* CoreLayer */,
+				948B7DFF27B7D9CC00BE1973 /* SupportingFiles */,
 				948B7DEC27B7D5B700BE1973 /* ViewController.swift */,
-				948B7DF427B7D5B900BE1973 /* Assets.xcassets */,
 				948B7DF627B7D5B900BE1973 /* LaunchScreen.storyboard */,
-				948B7DF927B7D5B900BE1973 /* Info.plist */,
-				948B7DF127B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld */,
 			);
 			path = SwiftTodoApp;
+			sourceTree = "<group>";
+		};
+		948B7DFF27B7D9CC00BE1973 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				948B7DF427B7D5B900BE1973 /* Assets.xcassets */,
+				948B7DF927B7D5B900BE1973 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		948B7E0027B7D9D500BE1973 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				948B7E0427B7DA1E00BE1973 /* Storage */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		948B7E0127B7D9DE00BE1973 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				948B7E0627B7DA3300BE1973 /* Entities */,
+				948B7E0527B7DA2900BE1973 /* Services */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		948B7E0227B7D9E700BE1973 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				948B7E0727B7DA4100BE1973 /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		948B7E0327B7D9F000BE1973 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				948B7DE827B7D5B700BE1973 /* AppDelegate.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		948B7E0427B7DA1E00BE1973 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		948B7E0527B7DA2900BE1973 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		948B7E0627B7DA3300BE1973 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				948B7DF127B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		948B7E0727B7DA4100BE1973 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				948B7E0927B7DA5200BE1973 /* TodoDetail */,
+				948B7E0827B7DA4700BE1973 /* Todos */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		948B7E0827B7DA4700BE1973 /* Todos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Todos;
+			sourceTree = "<group>";
+		};
+		948B7E0927B7DA5200BE1973 /* TodoDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodoDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftTodoApp/Info.plist;
+				INFOPLIST_FILE = SwiftTodoApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -304,7 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftTodoApp/Info.plist;
+				INFOPLIST_FILE = SwiftTodoApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
