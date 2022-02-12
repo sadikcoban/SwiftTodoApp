@@ -54,6 +54,31 @@ class TodosView: UIView {
         }
     }
     
+    public func reloadTableView() {
+        self.tableView.reloadData()
+    }
+    
+    public func insertRow(at index: Int, section: Int = 0) {
+            self.tableView.beginUpdates()
+            self.tableView.insertRows(at: [
+                IndexPath(
+                    row: index,
+                    section: section
+                )
+            ], with: .automatic)
+            self.tableView.endUpdates()
+        }
+        
+        public func deleteRow(at index: Int, section: Int = 0) {
+            self.tableView.beginUpdates()
+            self.tableView.deleteRows(at: [
+                IndexPath(
+                    row: index,
+                    section: section
+                )
+            ], with: .automatic)
+            self.tableView.endUpdates()
+        }
 }
 
 extension TodosView {
