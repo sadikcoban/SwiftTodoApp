@@ -20,6 +20,7 @@
 		948B7E1527B81FD400BE1973 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1427B81FD400BE1973 /* TodosViewController.swift */; };
 		948B7E1727B8289600BE1973 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1627B8289600BE1973 /* Extensions.swift */; };
 		948B7E1927B82D2400BE1973 /* TodosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1827B82D2400BE1973 /* TodosService.swift */; };
+		948B7E1B27B833D300BE1973 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1A27B833D300BE1973 /* PersistentContainerProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		948B7E1427B81FD400BE1973 /* TodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
 		948B7E1627B8289600BE1973 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		948B7E1827B82D2400BE1973 /* TodosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosService.swift; sourceTree = "<group>"; };
+		948B7E1A27B833D300BE1973 /* PersistentContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		948B7E0427B7DA1E00BE1973 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				948B7E1A27B833D300BE1973 /* PersistentContainerProvider.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				948B7DED27B7D5B700BE1973 /* ViewController.swift in Sources */,
+				948B7E1B27B833D300BE1973 /* PersistentContainerProvider.swift in Sources */,
 				948B7DF327B7D5B700BE1973 /* TodoModel.xcdatamodeld in Sources */,
 				948B7E0F27B81FAE00BE1973 /* TodosPresenter.swift in Sources */,
 				948B7E1927B82D2400BE1973 /* TodosService.swift in Sources */,
