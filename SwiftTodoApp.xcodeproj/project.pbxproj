@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		948B7DE927B7D5B700BE1973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DE827B7D5B700BE1973 /* AppDelegate.swift */; };
-		948B7DED27B7D5B700BE1973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DEC27B7D5B700BE1973 /* ViewController.swift */; };
-		948B7DF327B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DF127B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld */; };
+		948B7DF327B7D5B700BE1973 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DF127B7D5B700BE1973 /* TodoModel.xcdatamodeld */; };
 		948B7DF527B7D5B900BE1973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948B7DF427B7D5B900BE1973 /* Assets.xcassets */; };
 		948B7DF827B7D5B900BE1973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948B7DF627B7D5B900BE1973 /* LaunchScreen.storyboard */; };
+		948B7E0B27B81F7700BE1973 /* TodosConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E0A27B81F7700BE1973 /* TodosConfigurator.swift */; };
+		948B7E0D27B81FA200BE1973 /* TodosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E0C27B81FA200BE1973 /* TodosInteractor.swift */; };
+		948B7E0F27B81FAE00BE1973 /* TodosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E0E27B81FAE00BE1973 /* TodosPresenter.swift */; };
+		948B7E1127B81FBB00BE1973 /* TodosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1027B81FBB00BE1973 /* TodosRouter.swift */; };
+		948B7E1327B81FC500BE1973 /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1227B81FC500BE1973 /* TodosView.swift */; };
+		948B7E1527B81FD400BE1973 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1427B81FD400BE1973 /* TodosViewController.swift */; };
+		948B7E1727B8289600BE1973 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1627B8289600BE1973 /* Extensions.swift */; };
+		948B7E1927B82D2400BE1973 /* TodosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1827B82D2400BE1973 /* TodosService.swift */; };
+		948B7E1B27B833D300BE1973 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7E1A27B833D300BE1973 /* PersistentContainerProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		948B7DE527B7D5B700BE1973 /* SwiftTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948B7DE827B7D5B700BE1973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		948B7DEC27B7D5B700BE1973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		948B7DF227B7D5B700BE1973 /* SwiftTodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftTodoApp.xcdatamodel; sourceTree = "<group>"; };
 		948B7DF427B7D5B900BE1973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948B7DF727B7D5B900BE1973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		948B7DF927B7D5B900BE1973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948B7E0A27B81F7700BE1973 /* TodosConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosConfigurator.swift; sourceTree = "<group>"; };
+		948B7E0C27B81FA200BE1973 /* TodosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosInteractor.swift; sourceTree = "<group>"; };
+		948B7E0E27B81FAE00BE1973 /* TodosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosPresenter.swift; sourceTree = "<group>"; };
+		948B7E1027B81FBB00BE1973 /* TodosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRouter.swift; sourceTree = "<group>"; };
+		948B7E1227B81FC500BE1973 /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		948B7E1427B81FD400BE1973 /* TodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
+		948B7E1627B8289600BE1973 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		948B7E1827B82D2400BE1973 /* TodosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosService.swift; sourceTree = "<group>"; };
+		948B7E1A27B833D300BE1973 /* PersistentContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +75,6 @@
 				948B7E0127B7D9DE00BE1973 /* BusinessLogicLayer */,
 				948B7E0027B7D9D500BE1973 /* CoreLayer */,
 				948B7DFF27B7D9CC00BE1973 /* SupportingFiles */,
-				948B7DEC27B7D5B700BE1973 /* ViewController.swift */,
 				948B7DF627B7D5B900BE1973 /* LaunchScreen.storyboard */,
 			);
 			path = SwiftTodoApp;
@@ -70,6 +85,7 @@
 			children = (
 				948B7DF427B7D5B900BE1973 /* Assets.xcassets */,
 				948B7DF927B7D5B900BE1973 /* Info.plist */,
+				948B7E1627B8289600BE1973 /* Extensions.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 		948B7E0427B7DA1E00BE1973 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				948B7E1A27B833D300BE1973 /* PersistentContainerProvider.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -117,6 +134,7 @@
 		948B7E0527B7DA2900BE1973 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				948B7E1827B82D2400BE1973 /* TodosService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -124,7 +142,7 @@
 		948B7E0627B7DA3300BE1973 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				948B7DF127B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld */,
+				948B7DF127B7D5B700BE1973 /* TodoModel.xcdatamodeld */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -141,6 +159,12 @@
 		948B7E0827B7DA4700BE1973 /* Todos */ = {
 			isa = PBXGroup;
 			children = (
+				948B7E0A27B81F7700BE1973 /* TodosConfigurator.swift */,
+				948B7E0C27B81FA200BE1973 /* TodosInteractor.swift */,
+				948B7E0E27B81FAE00BE1973 /* TodosPresenter.swift */,
+				948B7E1027B81FBB00BE1973 /* TodosRouter.swift */,
+				948B7E1227B81FC500BE1973 /* TodosView.swift */,
+				948B7E1427B81FD400BE1973 /* TodosViewController.swift */,
 			);
 			path = Todos;
 			sourceTree = "<group>";
@@ -222,9 +246,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948B7DED27B7D5B700BE1973 /* ViewController.swift in Sources */,
-				948B7DF327B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld in Sources */,
+				948B7E1B27B833D300BE1973 /* PersistentContainerProvider.swift in Sources */,
+				948B7DF327B7D5B700BE1973 /* TodoModel.xcdatamodeld in Sources */,
+				948B7E0F27B81FAE00BE1973 /* TodosPresenter.swift in Sources */,
+				948B7E1927B82D2400BE1973 /* TodosService.swift in Sources */,
 				948B7DE927B7D5B700BE1973 /* AppDelegate.swift in Sources */,
+				948B7E1527B81FD400BE1973 /* TodosViewController.swift in Sources */,
+				948B7E1727B8289600BE1973 /* Extensions.swift in Sources */,
+				948B7E0B27B81F7700BE1973 /* TodosConfigurator.swift in Sources */,
+				948B7E0D27B81FA200BE1973 /* TodosInteractor.swift in Sources */,
+				948B7E1327B81FC500BE1973 /* TodosView.swift in Sources */,
+				948B7E1127B81FBB00BE1973 /* TodosRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,13 +466,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		948B7DF127B7D5B700BE1973 /* SwiftTodoApp.xcdatamodeld */ = {
+		948B7DF127B7D5B700BE1973 /* TodoModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				948B7DF227B7D5B700BE1973 /* SwiftTodoApp.xcdatamodel */,
 			);
 			currentVersion = 948B7DF227B7D5B700BE1973 /* SwiftTodoApp.xcdatamodel */;
-			path = SwiftTodoApp.xcdatamodeld;
+			path = TodoModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
