@@ -18,39 +18,41 @@ protocol TodosPresenter: AnyObject {
     func interactor(didFailDeleteTodoAtIndex index: Int)
     
     func interactor(didFindTodo todo: Todo)
-
+    
 }
 
 class TodoPresenterImplementation: TodosPresenter {
     
-    
+    weak var viewController: TodosPresenterOutput?
     
     func interactor(didRetrieveTodos todos: [Todo]) {
-        
+        viewController?.presenter(didRetrieveTodos: todos)
     }
     
     func interactor(didFailRetrieveTodos error: Error) {
-        
+        viewController?.presenter(didFailRetrieveTodos: error.localizedDescription)
     }
     
     func interactor(didAddTodo todo: Todo) {
-        
+        viewController?.presenter(didAddTodo: todo)
     }
     
     func interactor(didFailAddTodo error: Error) {
-        
+        viewController?.presenter(didFailAddTodo: error.localizedDescription)
     }
     
     func interactor(didDeleteTodoAtIndex index: Int) {
-        
+        viewController?.presenter(didDeleteTodoAtIndex: index)
     }
     
     func interactor(didFailDeleteTodoAtIndex index: Int) {
-        
+        viewController?.presenter(didFailDeleteTodoAtIndex: index, message: "Couldn't delete todo")
     }
     
     func interactor(didFindTodo todo: Todo) {
-        
+        if let id = todo.id {
+            viewController?.presenter(didObtainTodoId: id)
+        }
     }
     
     

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol TodosPresenterOutput {
+protocol TodosPresenterOutput: AnyObject {
     func presenter(didRetrieveTodos todos: [Todo])
     func presenter(didFailRetrieveTodos message: String)
     
