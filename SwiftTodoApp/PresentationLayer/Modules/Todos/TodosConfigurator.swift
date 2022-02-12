@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TitlesConfigurator {
+class TodosConfigurator {
     
     static func configureModule(viewController: TodosViewController) {
         let view = TodosView()

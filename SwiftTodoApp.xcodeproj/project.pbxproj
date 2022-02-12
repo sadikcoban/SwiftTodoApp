@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		948B7DE927B7D5B700BE1973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DE827B7D5B700BE1973 /* AppDelegate.swift */; };
-		948B7DED27B7D5B700BE1973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DEC27B7D5B700BE1973 /* ViewController.swift */; };
 		948B7DF327B7D5B700BE1973 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948B7DF127B7D5B700BE1973 /* TodoModel.xcdatamodeld */; };
 		948B7DF527B7D5B900BE1973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948B7DF427B7D5B900BE1973 /* Assets.xcassets */; };
 		948B7DF827B7D5B900BE1973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948B7DF627B7D5B900BE1973 /* LaunchScreen.storyboard */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		948B7DE527B7D5B700BE1973 /* SwiftTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948B7DE827B7D5B700BE1973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		948B7DEC27B7D5B700BE1973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		948B7DF227B7D5B700BE1973 /* SwiftTodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftTodoApp.xcdatamodel; sourceTree = "<group>"; };
 		948B7DF427B7D5B900BE1973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948B7DF727B7D5B900BE1973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				948B7E0127B7D9DE00BE1973 /* BusinessLogicLayer */,
 				948B7E0027B7D9D500BE1973 /* CoreLayer */,
 				948B7DFF27B7D9CC00BE1973 /* SupportingFiles */,
-				948B7DEC27B7D5B700BE1973 /* ViewController.swift */,
 				948B7DF627B7D5B900BE1973 /* LaunchScreen.storyboard */,
 			);
 			path = SwiftTodoApp;
@@ -249,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948B7DED27B7D5B700BE1973 /* ViewController.swift in Sources */,
 				948B7E1B27B833D300BE1973 /* PersistentContainerProvider.swift in Sources */,
 				948B7DF327B7D5B700BE1973 /* TodoModel.xcdatamodeld in Sources */,
 				948B7E0F27B81FAE00BE1973 /* TodosPresenter.swift in Sources */,

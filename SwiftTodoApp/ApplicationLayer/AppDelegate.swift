@@ -15,8 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let todosVC = TodosViewController()
+        let navigationVC = UINavigationController(rootViewController: todosVC)
+        TodosConfigurator.configureModule(viewController: todosVC)
+        
         window = UIWindow()
-        window?.rootViewController = ViewController()
+        window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
         return true
     }
