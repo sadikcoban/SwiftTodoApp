@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+protocol TodosInteractor {
+    func addTapped(with: String)
+    func viewDidLoad()
+    func didCommitDelete(for: Int)
+    func didSelectRow(at: Int)
+}
+
