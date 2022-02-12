@@ -27,6 +27,7 @@ class TodosViewController: UIViewController{
     // MARK: - Properties
     var todosView: TodosView?
     var interactor: TodosInteractor?
+    var router: TodosRouter?
     
     private var todos: [Todo] = []
     

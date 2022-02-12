@@ -21,7 +21,7 @@ protocol TodosPresenter: AnyObject {
     
 }
 
-class TodoPresenterImplementation: TodosPresenter {
+class TodosPresenterImplementation: TodosPresenter {
     
     weak var viewController: TodosPresenterOutput?
     
